@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import Layout from '@/components/Layout'
 import Navbar from '@/components/Navbar'
 import { UserAuth } from '@/context/AuthContext'
 import { db } from '@/config/firebase'
 import { updateDoc, doc, onSnapshot } from 'firebase/firestore'
 import { AiOutlineClose } from 'react-icons/ai'
-import Image from 'next/image'
 
 export default function FavouriteFoods() {
   const [foods, setFoods] = useState([])
@@ -45,7 +45,7 @@ export default function FavouriteFoods() {
           {foods?.map((food) => (
             <div
               key={food.id}
-              className="w-[6rem] sm:w-[10rem] md:w-[14rem] lg:w-[20rem] inline-block cursor-pointer relative p-2"
+              className="w-[160px] sm:w-[200px] md:w-[240px] lg:w-[280px] inline-block cursor-pointer relative p-2"
             >
               <Image
                 className="w-full h-auto block rounded-md"
