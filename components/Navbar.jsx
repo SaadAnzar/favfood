@@ -30,7 +30,7 @@ const Navbar = () => {
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
-      className="px-8 py-2 z-10 flex items-center justify-between shadow"
+      className="mx-8 my-4 z-10 flex items-center justify-between shadow"
     >
       <Link href="/">
         <h1 className="text-2xl font-bold">FavFood</h1>

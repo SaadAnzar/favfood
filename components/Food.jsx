@@ -29,15 +29,15 @@ const Food = ({ food }) => {
   }
 
   return (
-    <div className="w-[160px] sm:w-[200px] md:w-[240px] lg:w-[280px] inline-block cursor-pointer relative p-2">
+    <div className="w-[6rem] sm:w-[10rem] md:w-[14rem] lg:w-[20rem] inline-block cursor-pointer relative p-2">
       <Image
-        className="w-full h-auto block rounded-sm"
+        className="w-full h-auto block rounded-md"
         src={food?.strMealThumb}
         alt={food?.strMeal}
         width={280}
         height={420}
       />
-      <div className="absolute top-0 left-0 w-full h-full hover:bg-black/80 opacity-0 hover:opacity-100 text-white">
+      <div className="absolute top-0 left-0 w-full h-full hover:bg-black/80 opacity-0 hover:opacity-100">
         <p className="white-space-normal text-xs md:text-sm font-bold flex justify-center items-center h-full text-center">
           {food?.strMeal}
         </p>

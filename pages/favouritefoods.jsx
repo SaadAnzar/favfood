@@ -33,7 +33,7 @@ export default function FavouriteFoods() {
   return (
     <Layout>
       <Navbar />
-      <div>
+      <div className="m-8">
         <div className="text-center my-4">
           <h1 className="text-2xl">
             Welcome
@@ -41,20 +41,20 @@ export default function FavouriteFoods() {
           </h1>
           <h1 className="text-xl">Here are your favourite foods</h1>
         </div>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-4 gap-4">
           {foods?.map((food) => (
             <div
               key={food.id}
-              className="w-[160px] sm:w-[200px] md:w-[240px] lg:w-[280px] inline-block cursor-pointer relative p-2"
+              className="w-[6rem] sm:w-[10rem] md:w-[14rem] lg:w-[20rem] inline-block cursor-pointer relative p-2"
             >
               <Image
-                className="w-full h-auto block"
+                className="w-full h-auto block rounded-md"
                 src={food?.img}
                 alt={food?.title}
                 width={280}
                 height={420}
               />
-              <div className="absolute top-0 left-0 w-full h-full hover:bg-black/80 opacity-0 hover:opacity-100 text-white">
+              <div className="absolute top-0 left-0 w-full h-full hover:bg-black/80 opacity-0 hover:opacity-100">
                 <p className="white-space-normal text-xs md:text-sm font-bold flex justify-center items-center h-full text-center">
                   {food?.title}
                 </p>

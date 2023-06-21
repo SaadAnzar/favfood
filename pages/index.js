@@ -37,7 +37,7 @@ export default function Home() {
 
       <Navbar />
 
-      <main className={`${inter.className} container mx-auto py-4`}>
+      <main className={`${inter.className} m-8`}>
         <div className="grid grid-cols-4 gap-4">
           {foods.map((food) => (
             <Food key={food.idMeal} food={food} />
